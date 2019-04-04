@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node test_runner.js",
     "browser": "testcafe --list-browsers browser-provider",
-    "test-command": "testcafe 'chromium' tests/test_scripts -c 2",
+    "test-command": "testcafe 'chrome' tests/test_scripts -c 2",
     "test-docker": "docker run --add-host=127.0.0.1:127.0.0.1 -p 1337:1337 -v ${PWD}/tests:/tests -v ${PWD}/node_modules:/node_modules -e 'NODE_PATH=/node_modules' -it testcafe/testcafe 'firefox' tests/test_scripts -c 2",
     "test-cucumber": "gherkin-testcafe chrome tests/step_definitions/**/*.js tests/features/**/*.feature"
   },
