@@ -8,3 +8,7 @@
 ```sh
 $ npm install
 ```
+**4.** run test:
+```sh
+$ npm run test-cucumber
+```
